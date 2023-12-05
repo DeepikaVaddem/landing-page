@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/75e5e37bf8.js" crossorigin="anonymous"></script>
+    <!--Swiper-->
+    <script src="swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-container">
+        <nav class="navbar fixed-top">
+            <!-- LOGO -->
+            <div class="logo">SHOP</div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+
+                    <li><a href="#homeSection">Home</a></li>
+                    <li><a href="#newSection">New</a></li>
+
+                    <li><a href="#collectionsSection">Collection</a></li>
+                    <li><a href="#productsSection">Products</a></li>
+                    <li><a href="#footerSection">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="home-section" id="homeSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-auto pt-5 pl-3">
+                        <h1 class="home-section-heading ">New Clothing Collection</h1>
+                        <p class="home-section-description ">The new collection of clothing from the best
+                            brands this year.</p>
+                        <p class="p-3 home-section-explore-link">Explore <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="col-12 col-md-6 img-section">
+                        <img src="home-section-img1.webp" alt="image not found" class="home-section-img1"><br>
+                        <img src="home-section-img2.jpeg" alt="image not found" class="home-section-img2">
+                        <img src="home-section-img3.webp" alt="image not found" class="home-section-img3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="new-section" id="newSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 ">
+                        <h2 class="text-center">New categories</h2>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="new-img1.png" alt="immage not found" class="new-img1">
+                        <p class="text-center fs-5 mt-2">Hoodie & Sweatshirt</p>
+                        <p class="text-center fs-6">Winter Collection <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="new-img2.png" alt="immage not found" class="new-img2">
+                        <p class="text-center fs-5 mt-2">Pants & Jackets</p>
+                        <p class="text-center fs-6">Winter Collection <i class="fa-solid fa-arrow-right"></i></p>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="new-img3.png" alt="immage not found" class="new-img3">
+                        <p class="text-center fs-5 mt-2">Coat & Coat Sets</p>
+                        <p class="text-center fs-6">Winter Collection <i class="fa-solid fa-arrow-right"></i></p>
+
+                    </div>
+                </div>
+            </div>
+        </div><br><br><hr><br><br>
+
+        <div class="collections-section" id="collectionsSection">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-6 d-flex flex-column justify-content-center ">
+                        <h2 class="men-section-heading">Men Collection</h2>
+                        <p class="men-section-para">Explore Clothes <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="col-6">
+                        <img src="collections-men-img.webp" alt="image not found" class="collection-men-img">
+                    </div>
+                    <div class="col-6">
+                        <img src="collections-women-img.jpeg" alt="image not found" class="collection-women-img">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center women-section">
+                        <h2 class="women-section-heading">Women Collection</h2>
+                        <p class="women-section-para"><i class="fa-solid fa-arrow-left"></i> Explore Clothes </p>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><hr><br><br>
+
+        <section class="products-section" id="productsSection">
+            <h2 class="products-heading text-center">Best Products</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="product-img1.png" /><br>
+                        <h5>Blue Sport Pants</h5>
+                        <p>$69.99</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product-img2.png" /><br>
+                        <h5>Gotland Black Jacket</h5>
+                        <p>$125.99</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product-img3.png" /><br>
+                        <h5>Balck Sports Shorts</h5>
+                        <p>$78.99</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product-img4.png" /><br>
+                        <h5>Knox Quilted Jacket</h5>
+                        <p>$139.99</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product-img1.png" /><br>
+                        <h5>Blue Sport Pants</h5>
+                        <p>$69.99</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product-img2.png" /><br>
+                        <h5>Gotland Black Jacket</h5>
+                        <p>$125.99</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product-img3.png" /><br>
+                        <h5>Balck Sports Shorts</h5>
+                        <p>$78.99</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product-img4.png" /><br>
+                        <h5>Knox Quilted Jacket</h5>
+                        <p>$139.99</p>
+                    </div>
+                </div><br><br><br>
+                
+            </div>
+            <p class="products-para text-center"><i class="fa-solid fa-arrow-left"></i> Swipe left to see more items</p>
+
+        </section><hr><br><br>
+
+        <div class="brands-section mt-5" id="brandsSection">
+            <div class="container ">
+                <div class="row w-75 m-auto">
+                    <h2 class="text-center">
+                        Brands We Sell
+                    </h2>
+                    <div class="col-6 col-md-3 mt-5">
+                        <img src="brand-img1.png" alt="image not found" class="brand-img ">
+                    </div>
+                    <div class="col-6 col-md-3 mt-5">
+                        <img src="brand-img2.png" alt="image not found" class="brand-img mt-5">
+                    </div>
+                    <div class="col-6 col-md-3 mt-5">
+                        <img src="brand-img3.png" alt="image not found" class="brand-img">
+                    </div>
+                    <div class="col-6 col-md-3 mt-5">
+                        <img src="brand-img4.png" alt="image not found" class="brand-img mt-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-section mt-5" id="footerSection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-3 text-center mt-5">
+                            <h5>SHOP.</h5>
+                            <p>Committed to bringing  you <br> the best
+                                 clothing  from <br>popular brands</p>
+                        </div>
+                        <div class="col-6 col-md-2 text-center mt-5">
+                            <h5>Company</h5>
+                            <a>Shop</a><br>
+                            <a>Category</a><br>
+                            <a>Contact info</a>
+                        </div>
+                        <div class="col-6 col-md-2 text-center mt-5">
+                            <h5>Blog</h5>
+                            <a>Events</a><br>
+                            <a>Popular news</a><br>
+                            <a>Recent </a>
+                        </div>
+                        <div class="col-6 col-md-2 text-center mt-5">
+                            <h5>Office</h5>
+                            <a>Monday - Saturday</a><br>
+                            <a>9AM - 10PM</a>
+                        </div>
+                        <div class="col-12 col-md-3 text-center mt-5">
+                            <h5>Contact Us</h5>
+                            <div>
+                                <i class="fa-brands fa-facebook contact-logo1 fa-2x"></i>
+                                <i class="fa-brands fa-instagram contact-logo fa-2x"></i>
+                                <i class="fa-brands fa-whatsapp contact-logo3  fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
